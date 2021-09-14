@@ -1,0 +1,31 @@
+@value brand: './brand.module.css';
+@value border, background, borderRadiusLg from brand;
+
+.backgroundStars {
+  display: flex;
+  justify-content: center;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: #21252b;
+  background-image: url(./remi-jacquaint-cTVS0qZvXhI-unsplash.jpg);
+  background-repeat: repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  width: 1100px;
+  max-width: 90%;
+  margin: 50px 0;
+  background-color: background;
+
+  border: 1px solid border;
+  border-radius: borderRadiusLg;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}

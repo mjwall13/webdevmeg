@@ -1,0 +1,123 @@
+/* Colors */
+@value active: #1a9df1;
+@value dark: #21252b;
+@value background: #ffffff;
+@value border: #ffff00;
+@value disabled: #9b9c9e;
+@value white: #ffffff;
+@value selected: #00f48e;
+@value destructive: #ef6f6c;
+
+/* sizes */
+@value borderRadiusLg: 20px;
+
+@font-face {
+  font-family: 'Shadows Into Light Two', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+}
+
+.button {
+  display: inline-block;
+  height: auto;
+  padding: 10px 13px;
+  color: active;
+  font-weight: normal;
+  font-size: 16px;
+
+  font-family: 'Shadows Into Light Two', cursive;
+  font-style: normal;
+  line-height: 14px;
+  text-decoration: none;
+  background: active;
+  border: border;
+  border-radius: 3px;
+  outline: 2px;
+}
+
+.link {
+  padding: 5px 10px;
+  color: border;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid active;
+}
+
+.heading {
+  margin-bottom: 30px;
+  color: black;
+  font-weight: 600;
+  font-size: 32px;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.title {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'SF Text', sans-serif;
+  line-height: 14px;
+}
+
+.subTitle {
+  color: disabled;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'SF Text', sans-serif;
+  line-height: 14px;
+}
+
+.box {
+  background-color: dark;
+  border: 1px solid border;
+  border-radius: 10px;
+}
+
+.markdown {
+  color: black;
+  font-size: 18px;
+}
+
+.markdown h1 {
+  font-weight: bold;
+  font-size: 26px;
+}
+.markdown h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.markdown h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.markdown h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.markdown ul {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.markdown ol {
+  padding-left: 20px;
+}
+
+.markdown a {
+  color: active;
+}
+
+.input {
+  margin-bottom: 30px;
+  color: black;
+  background-color: dark;
+  border-color: white;
+}
+
+.input:focus {
+  border-color: active;
+}
+.input::placeholder {
+  color: disabled;
+}
