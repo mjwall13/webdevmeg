@@ -1,12 +1,10 @@
 /* Colors */
-@value active: #1a9df1;
-@value dark: #21252b;
-@value background: #ffffff;
+@value active: #cd8b76;
+@value dark: #183642;
 @value border: #ffff00;
-@value disabled: #9b9c9e;
+@value disabled: #6d435a;
 @value white: #ffffff;
-@value selected: #00f48e;
-@value destructive: #ef6f6c;
+@value selected: #7c9082;
 
 /* sizes */
 @value borderRadiusLg: 20px;
