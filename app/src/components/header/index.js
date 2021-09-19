@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Home from '../../pages/home';
 import About from '../../pages/about';
 import Contact from '../../pages/contact';
 
-export default function Header() {
+class Header extends Component{
+    render (){
     return (
-        <> 
-        <h1> Header </h1>
-        <nav>
         <Router>
-            <Link to="/" >Home</Link>
-            <Link to="/about" >About</Link>
-            <Link to="/contact" >Contact</Link>
-
-        </Router>
-        </nav>
-        </>
-    )
-
+        <div>
+            <nav>
+                <Link path={Home} to="/" >Home</Link>
+                <Link path={About} to="/about" >About</Link>
+                <Link path={Contact} to="/contact" >Contact</Link>
+            </nav>
+            <h1>Header</h1>
+        </div>
+        </Router>            
+    )}
 }
+export default Header
