@@ -6,7 +6,7 @@ class About extends Component {
 
         return(
             <>
-            
+            <h1>About</h1>
             </>            
         )
     }

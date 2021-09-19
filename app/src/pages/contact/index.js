@@ -6,7 +6,7 @@ class Contact extends Component {
 
         return(
             <>
-            
+            <h1>Contact</h1>
             </>            
         )
     }
