@@ -33,13 +33,14 @@ class Form extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        console.log(`${this.state.name}, ${this.state.email}, ${this.state.message}`)
     }
 
 
     render() {
 
     return (
-        <form>
+        <form onSubmit={this.handleSubmit}>
             <div>
                 <label>Name</label>
                 <input type="text" value={this.state.name} onChange={this.handleNameChange}/>
@@ -52,7 +53,7 @@ class Form extends Component {
                 <label>Message</label>
                 <textarea value={this.state.message} onChange={this.handleMessageChange} />
             </div>
-            <button type="submit" onSubmit={this.handleSubmit}>Send Message</button>
+            <button type="submit" >Send Message</button>
 
             
         </form>
