@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import validate from '../validate';
+
 class Form extends Component {
     constructor(props) {
         super(props)
@@ -7,6 +9,7 @@ class Form extends Component {
             name: '',
             email: '',
             message:'',
+            errors: []
         }
     }
 
@@ -34,6 +37,10 @@ class Form extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(`${this.state.name}, ${this.state.email}, ${this.state.message}`)
+
+        this.setState({
+            errors: validate(e)
+        })
     }
 
 
