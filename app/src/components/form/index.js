@@ -14,15 +14,25 @@ class Form extends Component {
         this.setState({
             name: e.target.value
         })
-
+        console.log(e.target.value)
     }
 
     handleEmailChange = (e) => {
-
+        this.setState({
+            email: e.target.value
+        })
+        console.log(e.target.value)
     }
 
     handleMessageChange = (e) => {
+        this.setState({
+            message: e.target.value
+        })
+        console.log(e.target.value)
+    }
 
+    handleSubmit = (e) => {
+        e.preventDefault();
     }
 
 
@@ -42,6 +52,7 @@ class Form extends Component {
                 <label>Message</label>
                 <textarea value={this.state.message} onChange={this.handleMessageChange} />
             </div>
+            <button type="submit" onSubmit={this.handleSubmit}>Send Message</button>
 
             
         </form>
