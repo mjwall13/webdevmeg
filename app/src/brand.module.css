@@ -10,8 +10,8 @@
 @value borderRadiusLg: 20px;
 
 @font-face {
-  font-family: 'Shadows Into Light Two', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+  font-family: 'Darker Grotesque', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 }
 
 .button {
@@ -22,7 +22,7 @@
   font-weight: normal;
   font-size: 16px;
 
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Darker Grotesque', sans-serif;
   font-style: normal;
   line-height: 14px;
   text-decoration: none;
@@ -46,7 +46,17 @@
   color: black;
   font-weight: 600;
   font-size: 32px;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.name {
+  color: dark;
+  font-weight: 600;
+  font-size: 4rem;
+  font-family: 'Darker Grotesque', sans-serif;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -66,7 +76,7 @@
 }
 
 .box {
-  background-color: dark;
+  background-color: white;
   border: 1px solid border;
   border-radius: 10px;
 }

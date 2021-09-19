@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-// import Home from '../../pages/home';
-// import About from '../../pages/about';
-// import Contact from '../../pages/contact';
-
+import styles from '../../app.module.css';
+import logo from '../../logo.png'
 class Header extends Component{
     render (){
     return (
         <div>
-        <nav>
-          <ul>
+          <img src={logo} alt="logo" className={styles.logo} />
+        <nav >
+          <ul className={styles.nav}>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -22,7 +21,6 @@ class Header extends Component{
             </li>
           </ul>
         </nav>            
-        <h1>Header</h1>
         </div>
     )}
 }
