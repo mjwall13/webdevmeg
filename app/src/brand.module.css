@@ -14,6 +14,17 @@
   src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 }
 
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 .input {
   padding: 10px;
   width: 300px;
@@ -50,7 +61,7 @@
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-.name {
+.title {
   color: dark;
   font-weight: 600;
   font-size: 4rem;
@@ -58,14 +69,6 @@
   line-height: 14px;
   display: flex;
   justify-content: center;
-}
-
-.title {
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: 'SF Text', sans-serif;
-  line-height: 14px;
 }
 
 .subTitle {

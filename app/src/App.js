@@ -1,6 +1,5 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import styles from './app.module.css';
+import styles from './brand.module.css';
 
 import Header from './components/header';
 import Footer from './components/footer';
@@ -11,7 +10,7 @@ import Contact from './pages/contact';
 
 function App() {
   return (
-    <div className={styles.background}>
+    <div className={styles.App}>
       <Router>
       <Switch>
 
