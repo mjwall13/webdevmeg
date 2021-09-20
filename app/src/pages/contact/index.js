@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../../app.module.css';
+import styles from '../../brand.module.css';
 
 import Form from '../../components/form';
 

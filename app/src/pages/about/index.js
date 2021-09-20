@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import styles from '../../brand.module.css';
 
 class About extends Component {
 
     render() {
 
         return(
-            <>
-            <h1>About</h1>
-            </>            
+            <div>
+            <h1 className={styles.title}>About</h1>
+            </div>            
         )
     }
 }

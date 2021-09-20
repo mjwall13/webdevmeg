@@ -22,6 +22,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(./alex-gruber-Fg3FrrEoYH4-unsplash.jpg);
+  background-repeat: none;
 }
 
 
@@ -41,6 +43,24 @@
 
 .message {
   color: black;
+}
+
+.container {
+  max-width: 90%;
+  background-color: white;
+  border: 3px solid yellow;
+  padding: 15px;
+}
+
+.formGroup {
+  padding: 10px;
+}
+
+.nav {
+  list-style-type: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 

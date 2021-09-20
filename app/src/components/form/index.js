@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import styles from '../../brand.module.css';
 
 import validate from '../validate';
 
@@ -47,16 +48,16 @@ class Form extends Component {
     render() {
 
     return (
-        <form onSubmit={this.handleSubmit}>
-            <div>
+        <form onSubmit={this.handleSubmit} className={styles.container}>
+            <div className={styles.formGroup}>
                 <label>Name</label>
                 <input type="text" value={this.state.name} onChange={this.handleNameChange}/>
             </div>
-            <div>
+            <div className={styles.formGroup}>
                 <label>Email</label>
                 <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
             </div>
-            <div>
+            <div className={styles.formGroup}>
                 <label>Message</label>
                 <textarea value={this.state.message} onChange={this.handleMessageChange} />
             </div>
