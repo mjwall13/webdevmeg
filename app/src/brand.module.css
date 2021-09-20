@@ -31,18 +31,28 @@
   padding: 10px;
   width: 300px;
   max-width: 90%;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   color: white;
+  border-radius: 10px;
 }
 
 .btn {
   margin-top: 1rem;
   padding: 10px 40px;
+  background: dark;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
 }
 
 .message {
   color: black;
+}
+
+.error {
+  color: red;
 }
 
 .container {

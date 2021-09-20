@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../../brand.module.css';
 
-import validate from '../validate';
-
 class Form extends Component {
     constructor(props) {
         super(props)
@@ -10,7 +8,9 @@ class Form extends Component {
             name: '',
             email: '',
             message:'',
-            errors: []
+            nameError: '',
+            emailError: '',
+            messageError: '',
         }
     }
 
@@ -37,11 +37,31 @@ class Form extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`${this.state.name}, ${this.state.email}, ${this.state.message}`)
-
         this.setState({
-            errors: validate(e)
+            nameError: '',
+            emailError: '',
+            messageError: '',
         })
+        if(!this.state.name ) {
+            this.setState({
+                nameError: "Name is Required"
+            })
+            }
+    
+        // email
+        // const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!this.state.email) {
+            this.setState({
+                emailError: "Email is Required"
+            })
+        } 
+    
+        // message
+        if(!this.state.message ) {
+            this.setState({
+                messageError: "Message is Required"
+            })
+        }
     }
 
 
@@ -52,16 +72,19 @@ class Form extends Component {
             <div className={styles.formGroup}>
                 <label>Name</label>
                 <input type="text" value={this.state.name} onChange={this.handleNameChange}/>
+                <span className={styles.error} >{this.state.nameError}</span>
             </div>
             <div className={styles.formGroup}>
                 <label>Email</label>
                 <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
+                <span className={styles.error}>{this.state.emailError}</span>
             </div>
             <div className={styles.formGroup}>
                 <label>Message</label>
                 <textarea value={this.state.message} onChange={this.handleMessageChange} />
+                <span className={styles.error} >{this.state.messageError}</span>
             </div>
-            <button type="submit" >Send Message</button>
+            <button type="submit" className={styles.btn} >Send Message</button>
 
             
         </form>
