@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import styles from '../../brand.module.css';
+
+import Form from '../../components/form';
 
 class Contact extends Component {
 
@@ -6,7 +9,8 @@ class Contact extends Component {
 
         return(
             <>
-            <h1>Contact</h1>
+            <h1 className={styles.title}>Contact Me</h1>
+            <Form />
             </>            
         )
     }

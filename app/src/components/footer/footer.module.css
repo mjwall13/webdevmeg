@@ -1,0 +1,19 @@
+@value brand: '../../brand.module.css';
+@value border, background, active from brand;
+
+
+img {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+}
+
+.footer {
+    border-top: 3px solid active;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+a {
+    align-content: center;
+}

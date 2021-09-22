@@ -6,31 +6,92 @@
 @value white: #ffffff;
 @value selected: #7c9082;
 
-/* sizes */
-@value borderRadiusLg: 20px;
-
 @font-face {
   font-family: 'Darker Grotesque', sans-serif;
   src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 }
 
-.button {
-  display: inline-block;
-  height: auto;
-  padding: 10px 13px;
-  color: active;
-  font-weight: normal;
-  font-size: 16px;
-
-  font-family: 'Darker Grotesque', sans-serif;
-  font-style: normal;
-  line-height: 14px;
-  text-decoration: none;
-  background: active;
-  border: border;
-  border-radius: 3px;
-  outline: 2px;
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(./alex-gruber-Fg3FrrEoYH4-unsplash.jpg);
+  background-repeat: repeat-y;
 }
+
+
+.input {
+  padding: 10px;
+  width: 200px;
+  max-width: 90%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: black;
+  border-bottom: 2px solid dark;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.textarea{
+  padding: 10px;
+  width: 200px;
+  max-width: 90%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: 2px solid dark;
+  color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.label {
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 10px 40px;
+  background: dark;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+}
+
+.message {
+  color: black;
+}
+
+.error {
+  color: red;
+  width: 100%;
+  padding: 5px 25px 10px 25px;
+}
+
+.container {
+  max-width: 80%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.formGroup {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.nav {
+  list-style-type: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 .link {
   padding: 5px 10px;
@@ -49,7 +110,7 @@
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-.name {
+.title {
   color: dark;
   font-weight: 600;
   font-size: 4rem;
@@ -57,14 +118,6 @@
   line-height: 14px;
   display: flex;
   justify-content: center;
-}
-
-.title {
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-  font-family: 'SF Text', sans-serif;
-  line-height: 14px;
 }
 
 .subTitle {
@@ -114,13 +167,6 @@
 
 .markdown a {
   color: active;
-}
-
-.input {
-  margin-bottom: 30px;
-  color: black;
-  background-color: dark;
-  border-color: white;
 }
 
 .input:focus {
