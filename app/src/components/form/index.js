@@ -37,6 +37,7 @@ class Form extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+
         this.setState({
             nameError: '',
             emailError: '',
@@ -46,7 +47,7 @@ class Form extends Component {
             this.setState({
                 nameError: "Name is Required"
             })
-            }
+        }
     
         // email
         // const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -62,6 +63,9 @@ class Form extends Component {
                 messageError: "Message is Required"
             })
         }
+
+        let userInput = document.querySelectorAll('input');
+
     }
 
 
@@ -70,18 +74,25 @@ class Form extends Component {
     return (
         <form onSubmit={this.handleSubmit} className={styles.container}>
             <div className={styles.formGroup}>
-                <label>Name</label>
-                <input type="text" value={this.state.name} onChange={this.handleNameChange}/>
+                <label className={styles.label} >Name</label>
+                <input className={styles.input} type="text" value={this.state.name} onChange={this.handleNameChange}/>
+            </div>
+            <div>
                 <span className={styles.error} >{this.state.nameError}</span>
             </div>
+
             <div className={styles.formGroup}>
-                <label>Email</label>
-                <input type="email" value={this.state.email} onChange={this.handleEmailChange} />
+                <label className={styles.label} >Email</label>
+                <input className={styles.input} type="email" value={this.state.email} onChange={this.handleEmailChange} />
+            </div>
+            <div>
                 <span className={styles.error}>{this.state.emailError}</span>
             </div>
             <div className={styles.formGroup}>
-                <label>Message</label>
-                <textarea value={this.state.message} onChange={this.handleMessageChange} />
+                <label className={styles.label} >Message</label>
+                <textarea className={styles.textarea} value={this.state.message} onChange={this.handleMessageChange} rows="5" cols="200"/>
+            </div>
+            <div>
                 <span className={styles.error} >{this.state.messageError}</span>
             </div>
             <button type="submit" className={styles.btn} >Send Message</button>
