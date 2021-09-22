@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import styles from '../../brand.module.css';
 
+import photo from '../about/photoOfMeg.jpg';
+
 class About extends Component {
 
     render() {
 
         return(
             <div>
-            <h1 className={styles.title}>About</h1>
+            <img src={photo} alt="photo of Megan" />
             </div>            
         )
     }
