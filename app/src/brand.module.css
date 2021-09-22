@@ -6,9 +6,6 @@
 @value white: #ffffff;
 @value selected: #7c9082;
 
-/* sizes */
-@value borderRadiusLg: 20px;
-
 @font-face {
   font-family: 'Darker Grotesque', sans-serif;
   src: url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
@@ -23,7 +20,7 @@
   justify-content: center;
   flex-direction: column;
   background-image: url(./alex-gruber-Fg3FrrEoYH4-unsplash.jpg);
-  background-repeat: none;
+  background-repeat: repeat-y;
 }
 
 
@@ -79,7 +76,6 @@
 
 .container {
   max-width: 80%;
-  background-color: white;
   border-radius: 10px;
   margin: auto;
 }
