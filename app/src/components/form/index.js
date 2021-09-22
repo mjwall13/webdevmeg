@@ -64,7 +64,12 @@ class Form extends Component {
             })
         }
 
-        let userInput = document.querySelectorAll('input');
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+        })
+
 
     }
 
