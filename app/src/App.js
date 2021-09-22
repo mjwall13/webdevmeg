@@ -13,7 +13,6 @@ function App() {
     <div className={styles.App}>
       <Router>
       <Switch>
-
       <header >
         <Header />
         <main>
