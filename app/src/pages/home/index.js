@@ -1,5 +1,4 @@
 import React, { Component }from 'react'
-import {BrowserRouter as Router, Link } from 'react-router-dom';
 import styles from '../../brand.module.css'
 
 class Home extends Component {
@@ -7,7 +6,7 @@ class Home extends Component {
     render() {
 
         return(
-         <div>
+         <div className={styles.h1} >
             <h1>Home Page</h1>
         </div>
         )

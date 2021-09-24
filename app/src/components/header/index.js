@@ -6,7 +6,7 @@ import logo from '../../logo.png'
 class Header extends Component{
     render (){
     return (
-        <div>
+        <div className={styles.headerCont} >
           <img src={logo} alt="logo" className={styles.logo} />
         <nav >
           <ul className={styles.nav}>

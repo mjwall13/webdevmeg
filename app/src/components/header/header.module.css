@@ -1,19 +1,22 @@
-
 @value brand: '../../brand.module.css';
-@value border, background, active from brand;
+@value active from brand;
 
 
 .nav {
     list-style-type: none;
-    width: 500px;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
-  .logo {
+img {
     height: 10rem;
     width: 50%;
-    border: none;
+    border: 3px solid purple;
   }
-  
-  
+
+.headerCont {
+    border: 3px solid yellow;
+    width: 90%;
+}
+ 

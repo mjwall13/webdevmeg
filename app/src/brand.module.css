@@ -85,6 +85,12 @@
   font-size: 1.2rem;
 }
 
+.nav {
+  list-style-type: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 .link {
@@ -171,6 +177,11 @@
   color: disabled;
 }
 
+.logo {
+  height: 10rem;
+  width: 50%;
+  border: none;
+}
 
 .photo {
   height: 20rem;
@@ -184,12 +195,11 @@
   /* flex-direction: row;
   width: 75%; */
   /* justify-content: space-between; */
-  margin: 35px;
+  margin: 25px;
 
 
 }
 
 .textArea {
-  margin: 35px;
 
 }
