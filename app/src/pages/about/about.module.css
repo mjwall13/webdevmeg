@@ -1,5 +1,5 @@
 @value brand: '../../brand.module.css';
-@value active, photo from brand;
+@value active, container, photo from brand;
 
 
 .textarea{
@@ -24,8 +24,7 @@
     display: flex;
     /* flex-direction: row;
     width: 75%; */
-    /* justify-content: space-between; */
-    margin: 25px;
+    justify-content: space-between;
 }
 
 .description {
@@ -33,5 +32,8 @@
     padding: 25px;
 }
   
-
+.imageContainer {
+    width: 85%;
+    padding-top: 10rem;
+}
   
