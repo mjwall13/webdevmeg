@@ -20,7 +20,6 @@
 }
 
 .about {
-    border: 3px solid yellow;
     display: flex;
     /* flex-direction: row;
     width: 75%; */
@@ -28,7 +27,6 @@
 }
 
 .description {
-    border: 3px solid purple;
     padding: 25px;
 }
   
