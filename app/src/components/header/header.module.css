@@ -1,0 +1,19 @@
+
+@value brand: '../../brand.module.css';
+@value border, background, active from brand;
+
+
+.nav {
+    list-style-type: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    height: 10rem;
+    width: 50%;
+    border: none;
+  }
+  
+  
