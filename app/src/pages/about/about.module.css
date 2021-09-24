@@ -1,0 +1,37 @@
+@value brand: '../../brand.module.css';
+@value active, photo from brand;
+
+
+.textarea{
+    padding: 10px;
+    width: 200px;
+    max-width: 90%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 2px solid dark;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+.textArea {
+
+}
+
+.about {
+    border: 3px solid yellow;
+    display: flex;
+    /* flex-direction: row;
+    width: 75%; */
+    /* justify-content: space-between; */
+    margin: 25px;
+}
+
+.description {
+    border: 3px solid purple;
+    padding: 25px;
+}
+  
+
+  

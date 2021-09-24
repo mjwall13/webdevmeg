@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../../brand.module.css';
+import styles from './about.module.css';
 
 import photo from '../../photoOfMeg.jpeg';
 
@@ -12,7 +12,9 @@ class About extends Component {
             <img className={styles.photo} src={photo} alt="Megan" />
             <div className={styles.textArea}>
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className={styles.description} >Megan started off with a History Degree with a Japanese minor from the University of Mississippi, where she also studied abroad in Tokyo, but that wasn’t enough to sate her quest for knowledge.<br />
+                Now with her second degree in Web Design and Development, she’s dedicated to doing the research and development to find answers to any problem.  Everything is a puzzle to be figured out.<br />
+                A customer service expert, Megan has the technical and personal skills needed to create the foundations to lasting success.  From full scale web applications to live streaming, she can find the best tech for you.</p>
             </div> 
             </div>           
         )
