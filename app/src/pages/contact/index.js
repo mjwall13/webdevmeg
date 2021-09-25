@@ -3,13 +3,15 @@ import styles from '../../brand.module.css';
 
 import Form from '../../components/form';
 
+import banner from '../../ContactMe.png';
+
 class Contact extends Component {
 
     render() {
 
         return(
             <>
-            <h1 className={styles.title}>Contact Me</h1>
+            <img src={banner} alt="Contact Me" className={styles.banner} />
             <Form />
             </>            
         )

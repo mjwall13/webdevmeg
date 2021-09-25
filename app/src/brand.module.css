@@ -179,6 +179,11 @@
 }
 
 .pageContent {
-  margin-top: 17rem;
+  margin-top: 20rem;
   width: 85%;
+}
+
+.banner {
+  border-bottom: 2px solid selected;
+  margin-top: 10rem;
 }

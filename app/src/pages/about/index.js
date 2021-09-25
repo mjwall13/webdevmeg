@@ -10,7 +10,7 @@ class About extends Component {
 
         return(
             <div className={styles.imageContainer}> 
-                <img src={about} className={styles.aboutImage} alt="About Megan" />
+                <img src={about} className={styles.banner} alt="About Megan" />
                 <div className={styles.about}>
                     <img className={styles.photo} src={photo} alt="Megan" />
                     <p className={styles.description} >Megan started off with a History Degree with a Japanese minor from the University of Mississippi, where she also studied abroad in Tokyo, but that wasn’t enough to sate her quest for knowledge.<br />
