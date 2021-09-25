@@ -1,0 +1,3 @@
+@value brand: '../../brand.module.css';
+@value active, container, photo, banner from brand;
+

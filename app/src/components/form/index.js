@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../../brand.module.css';
+import styles from './form.module.css';
 
 class Form extends Component {
     constructor(props) {
@@ -95,7 +95,7 @@ class Form extends Component {
             </div>
             <div className={styles.formGroup}>
                 <label className={styles.label} >Message</label>
-                <textarea className={styles.textarea} value={this.state.message} onChange={this.handleMessageChange} rows="5" cols="200"/>
+                <textarea className={styles.textArea} value={this.state.message} onChange={this.handleMessageChange} rows="5" cols="200"/>
             </div>
             <div>
                 <span className={styles.error} >{this.state.messageError}</span>
