@@ -12,20 +12,16 @@ function App() {
   return (
     <div className={styles.App}>
       <Router>
+      <Header />
+      <div className={styles.pageContent}>
       <Switch>
-
-      <header >
-        <Header />
-        <main>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-        </main>
-        <Footer />
-      </header>
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
       </Switch>
-
+      </div>
       </Router>
+      <Footer />
     </div>
   );
 }

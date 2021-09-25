@@ -2,10 +2,9 @@
 @value border, background, active from brand;
 
 
-img {
+.linkedInLogo {
     height: 2rem;
     width: 2rem;
-    border: 1px solid black;
 }
 
 .footer {
@@ -17,3 +16,4 @@ img {
 a {
     align-content: center;
 }
+

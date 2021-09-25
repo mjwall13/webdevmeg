@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from '../../brand.module.css';
+import styles from './header.module.css';
 import logo from '../../logo.png'
 class Header extends Component{
     render (){
     return (
-        <div>
+        <div className={styles.headerCont} >
           <img src={logo} alt="logo" className={styles.logo} />
         <nav >
           <ul className={styles.nav}>

@@ -37,18 +37,6 @@
   border-right: none;
 }
 
-.textarea{
-  padding: 10px;
-  width: 200px;
-  max-width: 90%;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  border: 2px solid dark;
-  color: black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
 
 .label {
   padding: 10px;
@@ -115,9 +103,10 @@
   font-weight: 600;
   font-size: 4rem;
   font-family: 'Darker Grotesque', sans-serif;
-  line-height: 14px;
+  line-height: 12px;
   display: flex;
   justify-content: center;
+  font-weight: lighter;
 }
 
 .subTitle {
@@ -174,4 +163,27 @@
 }
 .input::placeholder {
   color: disabled;
+}
+
+.logo {
+  height: 10rem;
+  width: 50%;
+  border: none;
+}
+
+.photo {
+  height: 20rem;
+  width: 15rem;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.pageContent {
+  margin-top: 20rem;
+  width: 85%;
+}
+
+.banner {
+  border-bottom: 2px solid selected;
+  margin-top: 10rem;
 }
