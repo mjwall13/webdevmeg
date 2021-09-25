@@ -13,11 +13,13 @@ function App() {
     <div className={styles.App}>
       <Router>
       <Header />
+      <div className={styles.pageContent}>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
       </Switch>
+      </div>
       </Router>
       <Footer />
     </div>

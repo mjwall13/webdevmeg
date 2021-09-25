@@ -177,3 +177,8 @@
   justify-content: space-between;
   padding: 25px;
 }
+
+.pageContent {
+  margin-top: 17rem;
+  width: 85%;
+}
