@@ -2,7 +2,6 @@
 @value active, container, photo, banner, disabled from brand;
 
 .projects {
-    border: 3px solid yellow;
 }
 
 ul {
