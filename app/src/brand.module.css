@@ -13,14 +13,13 @@
 
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./alex-gruber-Fg3FrrEoYH4-unsplash.jpg);
-  background-repeat: repeat-y;
+  background: #c8c8c8;
 }
 
 
@@ -156,7 +155,7 @@
 
 .banner {
   border-bottom: 2px solid selected;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
 }
 
 .homeContent {
