@@ -1,3 +1,7 @@
 @value brand: '../../brand.module.css';
 @value active, container, photo, banner from brand;
 
+.projects {
+    border: 3px solid yellow;
+    padding-top: 20rem;
+}
