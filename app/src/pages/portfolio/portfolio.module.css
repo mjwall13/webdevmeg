@@ -1,7 +1,25 @@
 @value brand: '../../brand.module.css';
-@value active, container, photo, banner from brand;
+@value active, container, photo, banner, disabled from brand;
 
 .projects {
     border: 3px solid yellow;
-    padding-top: 20rem;
+    padding-top: 40rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.portfolioLI {
+    border: 1px solid disabled;
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+
+.description {
+    padding: 10px;
+
 }
