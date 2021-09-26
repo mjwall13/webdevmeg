@@ -156,12 +156,7 @@
 
 .banner {
   border-bottom: 2px solid selected;
-  margin-top: 10rem;
-}
-
-.list {
-  border: 3px solid green;
-  list-style-type: none;
+  margin-top: 20rem;
 }
 
 .homeContent {
@@ -176,7 +171,6 @@ h2 {
 }
 
 .words {
-  border: 3px solid purple;
   padding: 15px;
   margin: 10px;
 }
