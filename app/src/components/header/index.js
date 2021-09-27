@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './header.module.css';
-import logo from '../../logo.png'
+import logo from '../../tagline.png'
 class Header extends Component{
     render (){
     return (
@@ -13,8 +13,11 @@ class Header extends Component{
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/about">About</Link>
+            </li> */}
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

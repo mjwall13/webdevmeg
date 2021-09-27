@@ -13,34 +13,16 @@
 
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(./alex-gruber-Fg3FrrEoYH4-unsplash.jpg);
-  background-repeat: repeat-y;
+  background: #c8c8c8;
 }
 
 
-.input {
-  padding: 10px;
-  width: 200px;
-  max-width: 90%;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  color: black;
-  border-bottom: 2px solid dark;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-
-
-.label {
-  padding: 10px;
-}
 
 .btn {
   margin-top: 1rem;
@@ -52,15 +34,7 @@
   border-radius: 10px;
 }
 
-.message {
-  color: black;
-}
 
-.error {
-  color: red;
-  width: 100%;
-  padding: 5px 25px 10px 25px;
-}
 
 .container {
   max-width: 80%;
@@ -68,10 +42,6 @@
   margin: auto;
 }
 
-.formGroup {
-  padding: 10px;
-  font-size: 1.2rem;
-}
 
 .nav {
   list-style-type: none;
@@ -185,5 +155,21 @@
 
 .banner {
   border-bottom: 2px solid selected;
-  margin-top: 10rem;
+  /* margin-top: 20rem; */
+}
+
+.homeContent {
+  display: flex;
+  width: 90%;
+  
+}
+
+h2 {
+  font-size: 1.3rem;
+
+}
+
+.words {
+  padding: 15px;
+  margin: 10px;
 }
