@@ -10,7 +10,7 @@ class Home extends Component {
 
         return(
             <div>
-                <img src={banner} className={styles.banner} alt="Megan Petty, Web Developer, Technical Producer, Resource Manager" />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zBEa_MgurPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <img src={banner} className={styles.banner} alt="Megan Petty, Web Developer, Technical Producer, Resource Manager" />
                 <div className={styles.homeContent}>
                     <img src={photo} alt="Megan" className={styles.photo} />
                     <div className={styles.words} >
