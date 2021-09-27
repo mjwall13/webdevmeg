@@ -1,0 +1,19 @@
+@value brand: '../../brand.module.css';
+@value border, background, active from brand;
+
+
+.linkedInLogo {
+    height: 2rem;
+    width: 2rem;
+}
+
+.footer {
+    border-top: 3px solid active;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+a {
+    align-content: center;
+}
+

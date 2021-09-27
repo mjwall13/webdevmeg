@@ -1,0 +1,28 @@
+@value brand: '../../brand.module.css';
+@value active from brand;
+
+
+.nav {
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid active;
+    padding-bottom: 25px;
+  }
+
+img {
+    height: 10rem;
+    width: 50%;
+    padding-left: 40px;
+  }
+
+.headerCont {
+    width: 90%;
+    padding: 25px;
+    height: 15rem;
+    position: absolute;
+    top: 0;
+}
+ 
